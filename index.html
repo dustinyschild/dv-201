@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Lab 1</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Lab 1 Demo</h1>
+    </header>
+
+    <ul>
+      <li>What is your age?</li>
+      <li>Where are you from?</li>
+      <li>What is your favorite color?</li>
+      <li>What is your favorite food?</li>
+
+    <script>
+      console.log('Hello, DeltaV');
+      var user = {};
+//This is getting the name of the user for future use
+      user.Name = prompt('What is your name, user?');
+
+//Getting the age of the user, displaying it in the alert, then logging it to the console
+      user.Age = prompt('What is your age?');
+      alert('You are ' + user.Age + ' years old');
+      console.log('Asked for the user\'s age. \n Answer given: ' + user.Age);
+
+//Doing the same thing with user's place of birth
+      user.placeOfOrigin = prompt('Where are you from?');
+      alert('You are ' +  user.Age +' years old, and you are from ' + user.placeOfOrigin);
+      console.log('Asked for user\'s place of birth \n Answer given: ' + user.placeOfOrigin);
+
+//Same thing with user's favorite color
+      user.favoriteColor = prompt('What is your favorite color?');
+      alert('You are ' +  user.Age +
+      ' years old, you are from ' + user.placeOfOrigin +
+      ', and your favorite color is ' + user.favoriteColor);
+      console.log('Asked for the user\'s favorite color \n Answer given: ' + user.favoriteColor);
+
+//Same thing with user's favorite food
+      user.favoriteFood = prompt('What is your favorite food?');
+      alert(user.Name + ' is ' + user.Age +
+      ' years old and is from ' + user.placeOfOrigin +
+      '. They like ' + user.favoriteFood +
+      ' and their favorite color is ' + user.favoriteColor + '.');
+      console.log('Asked for user\'s favorite food \n Answer given: ' + user.favoriteFood);
+    </script>
+
+  </body>
+
+</html>
